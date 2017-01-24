@@ -9,3 +9,11 @@ const CreateClassComponent = React.createClass({
 })
 
 export default CreateClassComponent
+
+// var ES5CreateClassComponent = React.createClass({
+//   render: function() {
+//     return (
+//       <div>createClass Example</div>
+//     );
+//   }
+// });

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react"
 
-class ES6ClassComponent extends React.Component {
+class SimpleExample extends React.Component {
   constructor(props) {
     super(props)
 
@@ -16,7 +16,7 @@ class ES6ClassComponent extends React.Component {
 
     this.setState((prevState) => {
       return {
-        name: toggleName(this.state.name)
+        name: toggleName(prevState.name)
       }
     })
   }
@@ -24,16 +24,16 @@ class ES6ClassComponent extends React.Component {
   render() {
     return (
       <div>
-        <div>ES6 class Example</div>
-
-        <div>{this.state.name}</div>
+        <div>Simple Example</div>
 
         <button onClick={this.handleClick}>
           Click Me
         </button>
+
+        <div>{this.state.name}</div>
       </div>
     )
   }
 }
 
-export default ES6ClassComponent
+export default SimpleExample
